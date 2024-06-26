@@ -1,0 +1,8 @@
+def print_string_n_times(string, n):
+    if n > 0:
+        print(string)
+        print_string_n_times(string, n-1)
+
+user_string = input("Введите строку, которую хотите повторить: ")
+n = int(input("Сколько раз вы хотите повторить эту строку? "))
+print_string_n_times(user_string, n)
